@@ -2,21 +2,21 @@
 <odoo>
     <data>
         <!-- advance salary rule -->
-        <record id="hr_payslip_rule_advance_new" model="hr.salary.rule">
-            <field name="code">ANT</field>
-            <field name="name">Anticipo de Sueldo</field>
-            <field name="amount_select">code</field>
-            <field name="category_id" ref="payroll.DED"/>
-            <field name="amount_python_compute">result = inputs.ANT and - (inputs.ANT.amount)</field>
-            <field name="appears_on_payslip" eval="True"/>
-            <field name="sequence" eval="190"/>
-        </record>
+<!--        <record id="hr_payslip_rule_advance_new" model="hr.salary.rule">-->
+<!--            <field name="code">ANT</field>-->
+<!--            <field name="name">Anticipo de Sueldo</field>-->
+<!--            <field name="amount_select">code</field>-->
+<!--            <field name="category_id" ref="payroll.DED"/>-->
+<!--            <field name="amount_python_compute">result = inputs.ANT and - (inputs.ANT.amount)</field>-->
+<!--            <field name="appears_on_payslip" eval="True"/>-->
+<!--            <field name="sequence" eval="190"/>-->
+<!--        </record>-->
 
-        <record id="hr_rule_input_advance_new" model="hr.rule.input">
-            <field name="code">ANT</field>
-            <field name="name">Anticipo de Sueldo</field>
-            <field name="input_id" ref="hr_payslip_rule_advance_new"/>
-        </record>
+<!--        <record id="hr_rule_input_advance_new" model="hr.rule.input">-->
+<!--            <field name="code">ANT</field>-->
+<!--            <field name="name">Anticipo de Sueldo</field>-->
+<!--            <field name="input_id" ref="hr_payslip_rule_advance_new"/>-->
+<!--        </record>-->
         <!-- salary structure -->
 <!--        <record model="ir.ui.view" id="model_salary_structure">-->
 <!--            <field name="name">salary.structure.form</field>-->
